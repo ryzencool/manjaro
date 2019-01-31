@@ -8,14 +8,39 @@ manjaro tips and software list
 * redis: redis-desktop-manager
 * mongo: robot3T,studio3T
 * ide: idea, vscode
-* terminal proxy: proxychain
+* global proxy: proxychain
 * navigator: synapse
 * cloud repo: dropbox
 * markdown: typora
-* repo manager: yay
+* pm: yay
 * sh: zsh
 * ftp: filezilla
 * recompile: jd-gui
 * gw: shadowsocks-qt5
+* version: git
   
-#### proxychain config
+#### proxychain 
+
+#### yay
+*install*
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+*usage*
+```
+yay -S <package-name> # install some package
+
+yay -Ss <package-name> # search some package in official repository
+
+yay -Si <package-name> # view package information
+
+yay -Syu # update all packages
+
+yay <package-name> # shows menu of package
+
+yay -Yc # remove unwanted dependencies
+```
+
+
