@@ -18,8 +18,32 @@ manjaro tips and software list
 * recompile: jd-gui
 * gw: shadowsocks-qt5
 * version: git
+* zk: exhibitor
+* kafka: kafka-manager
+* container: docker
   
-#### proxychain 
+#### basic settings
+
+*mirror*
+```
+sudo pacman-mirrors -i -c China -m rank
+sudo pacman -Syyu
+```
+
+*pacman*
+```
+sudo vim /etc/pacman.conf
+```
+```
+[archlinuxcn]
+SigLevel = Optional TrustedOnly
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+```
+```
+sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+```
+
+#### proxychains
 
 #### yay
 *install*
@@ -38,7 +62,7 @@ yay -Si <package-name> # view package information
 
 yay -Syu # update all packages
 
-yay <package-name> # shows menu of package
+yay <package-name> # shows menus of package
 
 yay -Yc # remove unwanted dependencies
 ```
