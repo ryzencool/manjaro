@@ -45,6 +45,23 @@ sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
 
 #### proxychains
 
+
+#### java install and switch version
+
+```
+yay jdk # list all jdk version
+yay -S <jdk-package-name> 
+```
+
+*switch jdk version*
+```
+archlinux-java status # list all version
+
+archlinux-java set <java-package-name>
+
+archlinux-java fix # fix some jdk bug
+```
+
 #### yay
 *install*
 ```
