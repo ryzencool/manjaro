@@ -45,9 +45,31 @@ sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
 
 #### proxychains
 
+*install*
+```
+yay -S proxychains-ng
+```
+
+*config: vim /etc/proxychains.conf*
+```
+socks5 127.0.0.1 9050
+```
+
+*alias*
+```
+alias pc='proxychains4'
+```
+
+*example*
+```
+pc ping google.com
+```
+
+
 
 #### java install and switch version
 
+*install*
 ```
 yay jdk # list all jdk version
 yay -S <jdk-package-name> 
@@ -83,5 +105,6 @@ yay <package-name> # shows menus of package
 
 yay -Yc # remove unwanted dependencies
 ```
+
 
 
